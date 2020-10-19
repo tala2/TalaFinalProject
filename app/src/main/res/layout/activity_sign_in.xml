@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SignINActivity2">
+    tools:context=".MyUI.SignInActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
-                android:layout_height="89dp"
+                android:layout_height="117dp"
                 android:fontFamily="@font/aguafina_script"
                 android:lineSpacingExtra="30sp"
                 android:text="Sign In"
@@ -64,21 +64,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="16dp" />
 
-            <Button
-                android:id="@+id/btnForgetPass"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Forget my password" />
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp" />
+                <Button
+                    android:id="@+id/btnForgetPass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:text="Forget my password" />
 
-            <Button
-                android:id="@+id/btnSignup"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SignUp" />
+                <Space
+                    android:layout_width="142dp"
+                    android:layout_height="12dp" />
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="185dp"
+                    android:layout_height="wrap_content"
+                    android:text="SignUp" />
+            </LinearLayout>
 
         </LinearLayout>
     </LinearLayout>

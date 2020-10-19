@@ -1,5 +1,4 @@
-package mub.tala.talafinalproject;
-
+package mub.tala.talafinalproject.MyUI;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -7,12 +6,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import mub.tala.talafinalproject.R;
 public class SignUpActivity extends AppCompatActivity {
     private TextView TvSignUp;
     private EditText etFirstName,etLastName,etPhone,etEmail2,etPassWord,etPassWordVarify;
     private Button btnSave,btnReturn;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +25,6 @@ public class SignUpActivity extends AppCompatActivity {
         btnSave = findViewById(R.id.btnSave);//save data
         btnReturn = findViewById(R.id.btnReturn);//return to the home screen
     }
-
         private void checkForm() {
             String passw2 = etPassWordVarify.getText().toString();
             String passw1 = etPassWord.getText().toString();
@@ -35,7 +32,6 @@ public class SignUpActivity extends AppCompatActivity {
             String lname = etLastName.getText().toString();
             String phone = etPhone.getText().toString();
             String email = etEmail2.getText().toString();
-
             boolean isOk = true;
             if (fname.length() < 2)
             {
@@ -49,5 +45,4 @@ public class SignUpActivity extends AppCompatActivity {
                 etEmail2.setError("Wrong Email Address Please Rewrite");
             }
         }
-
 }

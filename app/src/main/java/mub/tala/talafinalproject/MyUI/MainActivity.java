@@ -1,8 +1,10 @@
-package mub.tala.talafinalproject;
+package mub.tala.talafinalproject.MyUI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import mub.tala.talafinalproject.R;
 
 public class MainActivity extends AppCompatActivity {
 
