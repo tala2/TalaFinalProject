@@ -76,8 +76,8 @@
                     android:text="Forget my password" />
 
                 <Space
-                    android:layout_width="142dp"
-                    android:layout_height="12dp" />
+                    android:layout_width="80dp"
+                    android:layout_height="19dp" />
 
                 <Button
                     android:id="@+id/btnSignup"
