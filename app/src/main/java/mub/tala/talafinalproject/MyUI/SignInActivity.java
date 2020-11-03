@@ -75,26 +75,25 @@ public class SignInActivity extends AppCompatActivity {
     {
         //7
         FirebaseAuth auth=FirebaseAuth.getInstance();
-        //8
-        auth.signInWithEmailAndPassword(email,passw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+        // 8
+        auth.signInWithEmailAndPassword(email, passw).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                //9
-                if(task.isSuccessful())
-                {
-                    //10
+                if(task.isSuccessful()){
+                    //8
                     Intent i=new Intent(SignInActivity.this,MainActivity.class);
                     startActivity(i);
                 }
-                //11
-                else
-                {
-                    //12
+                else {
+                    //9
                     Toast.makeText(SignInActivity.this,"Faild",Toast.LENGTH_SHORT).show();
                     etEmail.setError(task.getException().getMessage());
                 }
             }
         });
+
+
+
     }
 
 }
