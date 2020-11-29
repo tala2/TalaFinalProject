@@ -22,8 +22,7 @@ public class MyShopsAdaptor extends ArrayAdapter<Shop> {
      * @param resource XML  design of the item
      */
     //fix error
-    public MyShopsAdaptor(@NonNull Context context, int resource) {
-        super(context, resource);
+    public MyShopsAdaptor(@NonNull Context context, int resource) { super(context, resource);
         /**
          * bulding single item view
          * @param position index item in list view
@@ -31,7 +30,19 @@ public class MyShopsAdaptor extends ArrayAdapter<Shop> {
          * @param parent listview
          * @return
          */
+
         //3. overriding getview
-        
-    }
+      /*
+        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+
+            //3.1
+            View v= LayoutInflater.from(getContext()).inflate(R.layout.item_shop_view,parent,false);
+            //3.2 find view by ID
+            TextView tvTitle=v.findViewById(R.id.itmTvTittle);
+            TextView tvImportant=v.findViewById(R.id.itmTvImportant);
+            TextView tvNecessary=v.findViewById(R.id.itemTvNecessery);
+            TextView tvSubject=v.findViewById(R.id.itmTvSubject);
+*/
+
+        }
 }
