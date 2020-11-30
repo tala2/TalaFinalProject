@@ -7,6 +7,7 @@ public class Shop {
     private String adress;
     private String type;
     private double rate;
+    private String phone;
     private ILocationSourceDelegate locationSourceDelegate;
 
     public Shop() {
@@ -46,6 +47,14 @@ public class Shop {
 
     public ILocationSourceDelegate getLocationSourceDelegate() {
         return locationSourceDelegate;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public void setLocationSourceDelegate(ILocationSourceDelegate locationSourceDelegate) {
