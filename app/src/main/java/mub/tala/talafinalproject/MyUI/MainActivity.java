@@ -24,7 +24,7 @@ import mub.tala.talafinalproject.data.Shop;
 //1 XML
 public class MainActivity extends AppCompatActivity {
     private ImageButton ibtnAdd;
-    //2 after building the arry adapter
+    //2 after building the array adapter
     ListView lstShop;
     //adaptor
     MyShopsAdaptor shopsAdaptor;
