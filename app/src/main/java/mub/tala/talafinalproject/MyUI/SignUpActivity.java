@@ -2,7 +2,9 @@ package mub.tala.talafinalproject.MyUI;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -15,10 +17,13 @@ import com.google.firebase.auth.FirebaseAuth;
 
 import mub.tala.talafinalproject.MyUtils.MyValidations;
 import mub.tala.talafinalproject.R;
+//1 Xml
 public class SignUpActivity extends AppCompatActivity {
+    //2 find view by id
     private TextView TvSignUp;
     private EditText etFirstName,etLastName,etPhone,etEmail2,etPassWord,etPassWordVarify;
     private Button btnSave,btnReturn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,6 +37,21 @@ public class SignUpActivity extends AppCompatActivity {
         etPassWordVarify = findViewById(R.id.etPassWordVarify);//verifying
         btnSave = findViewById(R.id.btnSave);//save data
         btnReturn = findViewById(R.id.btnReturn);//return to the home screen
+
+
+        btnSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+            }
+        });
+        btnReturn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //return to the home screen
+                Intent i=new Intent(SignUpActivity.this,HomeScreenActivity.class);
+                startActivity(i);
+            }
+        });
     }
         private void validateForm() {
             String passw2 = etPassWordVarify.getText().toString();

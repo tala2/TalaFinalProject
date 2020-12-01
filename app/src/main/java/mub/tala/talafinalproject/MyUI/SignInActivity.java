@@ -25,8 +25,17 @@ public class SignInActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //11 check if I signed in before
+        FirebaseAuth auth=FirebaseAuth.getInstance();
+        if(auth.getCurrentUser()!=null)//user signed in before
+        {
+            Intent i= new Intent(getBaseContext(),MainActivity.class);
+            finish();
+            startActivity(i);
+        }
+
         setContentView(R.layout.activity_sign_in);
-//3
+        //3
         etEmail=findViewById(R.id.etEmail2);
         etPassword=findViewById(R.id.etPassWord);
         btnLogin=findViewById(R.id.btnSignIn);
@@ -43,6 +52,8 @@ public class SignInActivity extends AppCompatActivity {
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i=new Intent(SignInActivity.this,SignUpActivity.class);
+                startActivity(i);
             }
         });
     }
@@ -80,12 +91,12 @@ public class SignInActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
-                    //8
+                    //9
                     Intent i=new Intent(SignInActivity.this,MainActivity.class);
                     startActivity(i);
                 }
                 else {
-                    //9
+                    //10
                     Toast.makeText(SignInActivity.this,"Faild",Toast.LENGTH_SHORT).show();
                     etEmail.setError(task.getException().getMessage());
                 }

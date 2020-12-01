@@ -3,12 +3,30 @@ package mub.tala.talafinalproject.data;
 import com.google.android.gms.maps.internal.ILocationSourceDelegate;
 
 public class Shop {
+    private String key; //id
     private String name;
     private String adress;
     private String type;
     private double rate;
     private String phone;
+    private String owner;
     private ILocationSourceDelegate locationSourceDelegate;
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public String getKey(String key) {
+        return this.key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
 
     public Shop() {
     }
