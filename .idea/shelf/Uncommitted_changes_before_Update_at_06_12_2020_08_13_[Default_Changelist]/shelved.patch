@@ -1,0 +1,63 @@
+Index: app/google-services.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>{\r\n  \"project_info\": {\r\n    \"project_number\": \"368395227533\",\r\n    \"firebase_url\": \"https://talatasky2020.firebaseio.com\",\r\n    \"project_id\": \"talatasky2020\",\r\n    \"storage_bucket\": \"talatasky2020.appspot.com\"\r\n  },\r\n  \"client\": [\r\n    {\r\n      \"client_info\": {\r\n        \"mobilesdk_app_id\": \"1:368395227533:android:655ad437c8007fb48f2dc4\",\r\n        \"android_client_info\": {\r\n          \"package_name\": \"mub.tala.talatasky2020\"\r\n        }\r\n      },\r\n      \"oauth_client\": [\r\n        {\r\n          \"client_id\": \"368395227533-d392hdbtl51dual3a3ash2r7kg7u22ru.apps.googleusercontent.com\",\r\n          \"client_type\": 1,\r\n          \"android_info\": {\r\n            \"package_name\": \"mub.tala.talatasky2020\",\r\n            \"certificate_hash\": \"37e9d8a462db914dfb2a5f14defca828ca4e0f90\"\r\n          }\r\n        },\r\n        {\r\n          \"client_id\": \"368395227533-8gpmr8qb3sggp19rka38a9d7gsdiujno.apps.googleusercontent.com\",\r\n          \"client_type\": 3\r\n        }\r\n      ],\r\n      \"api_key\": [\r\n        {\r\n          \"current_key\": \"AIzaSyB6Hjz2eVV6d9gPjAJgaIj_PsCD6XhEXjc\"\r\n        }\r\n      ],\r\n      \"services\": {\r\n        \"appinvite_service\": {\r\n          \"other_platform_oauth_client\": [\r\n            {\r\n              \"client_id\": \"368395227533-8gpmr8qb3sggp19rka38a9d7gsdiujno.apps.googleusercontent.com\",\r\n              \"client_type\": 3\r\n            }\r\n          ]\r\n        }\r\n      }\r\n    }\r\n  ],\r\n  \"configuration_version\": \"1\"\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/google-services.json	(revision dc20b3534ef611ad3dbeebe54fb8d404e37dbba5)
++++ app/google-services.json	(date 1606990999979)
+@@ -1,42 +1,42 @@
+ {
+   "project_info": {
+-    "project_number": "368395227533",
+-    "firebase_url": "https://talatasky2020.firebaseio.com",
+-    "project_id": "talatasky2020",
+-    "storage_bucket": "talatasky2020.appspot.com"
++    "project_number": "291399300864",
++    "firebase_url": "https://talafinalproject.firebaseio.com",
++    "project_id": "talafinalproject",
++    "storage_bucket": "talafinalproject.appspot.com"
+   },
+   "client": [
+     {
+       "client_info": {
+-        "mobilesdk_app_id": "1:368395227533:android:655ad437c8007fb48f2dc4",
++        "mobilesdk_app_id": "1:291399300864:android:356d14b67f1213be10e5e5",
+         "android_client_info": {
+-          "package_name": "mub.tala.talatasky2020"
++          "package_name": "mub.tala.talafinalproject"
+         }
+       },
+       "oauth_client": [
+         {
+-          "client_id": "368395227533-d392hdbtl51dual3a3ash2r7kg7u22ru.apps.googleusercontent.com",
++          "client_id": "291399300864-fvob8f0onlbsgh47nsigh4fpvac95nge.apps.googleusercontent.com",
+           "client_type": 1,
+           "android_info": {
+-            "package_name": "mub.tala.talatasky2020",
++            "package_name": "mub.tala.talafinalproject",
+             "certificate_hash": "37e9d8a462db914dfb2a5f14defca828ca4e0f90"
+           }
+         },
+         {
+-          "client_id": "368395227533-8gpmr8qb3sggp19rka38a9d7gsdiujno.apps.googleusercontent.com",
++          "client_id": "291399300864-f1m353m3b03us7ujh0ub8aslptrnlr03.apps.googleusercontent.com",
+           "client_type": 3
+         }
+       ],
+       "api_key": [
+         {
+-          "current_key": "AIzaSyB6Hjz2eVV6d9gPjAJgaIj_PsCD6XhEXjc"
++          "current_key": "AIzaSyDOnkvzBcZkfN8FILalPD5giFYsVZM1Nt8"
+         }
+       ],
+       "services": {
+         "appinvite_service": {
+           "other_platform_oauth_client": [
+             {
+-              "client_id": "368395227533-8gpmr8qb3sggp19rka38a9d7gsdiujno.apps.googleusercontent.com",
++              "client_id": "291399300864-f1m353m3b03us7ujh0ub8aslptrnlr03.apps.googleusercontent.com",
+               "client_type": 3
+             }
+           ]
