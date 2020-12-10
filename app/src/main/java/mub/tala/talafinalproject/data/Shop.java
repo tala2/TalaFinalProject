@@ -1,6 +1,6 @@
 package mub.tala.talafinalproject.data;
 
-import com.google.android.gms.maps.internal.ILocationSourceDelegate;
+
 
 public class Shop {
     private String key; //id
@@ -10,7 +10,7 @@ public class Shop {
     private double rate;
     private String phone;
     private String owner;
-    private ILocationSourceDelegate locationSourceDelegate;
+
 
     public String getOwner() {
         return owner;
@@ -63,9 +63,6 @@ public class Shop {
         this.rate = rate;
     }
 
-    public ILocationSourceDelegate getLocationSourceDelegate() {
-        return locationSourceDelegate;
-    }
 
     public String getPhone() {
         return phone;
@@ -75,7 +72,4 @@ public class Shop {
         this.phone = phone;
     }
 
-    public void setLocationSourceDelegate(ILocationSourceDelegate locationSourceDelegate) {
-        this.locationSourceDelegate = locationSourceDelegate;
-    }
 }
